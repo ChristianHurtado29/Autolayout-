@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gBy-OU-0Yl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mfz-jP-aXi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -71,27 +71,47 @@
             </objects>
             <point key="canvasLocation" x="1659" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Autolayout 4-->
         <scene sceneID="Ic8-it-HSU">
             <objects>
-                <viewController storyboardIdentifier="Autolayout 4" id="vpA-7V-QGG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Autolayout 4" id="vpA-7V-QGG" userLabel="Autolayout 4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p5T-J1-Hng">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcf-W4-xQp">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="toP-IK-EXY">
+                                <rect key="frame" x="66" y="84" width="282" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCP-Ig-dkA" customClass="RoundedButton" customModule="AutoLayout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toc-g5-eNM">
+                                        <rect key="frame" x="84" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9n-rK-UlM">
+                                        <rect key="frame" x="168" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qC-WP-z3E">
+                                        <rect key="frame" x="252" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="toP-IK-EXY" firstAttribute="top" secondItem="uAU-Ku-FrW" secondAttribute="top" constant="40" id="4h5-Nv-Tmk"/>
+                            <constraint firstItem="toP-IK-EXY" firstAttribute="centerX" secondItem="p5T-J1-Hng" secondAttribute="centerX" id="G0D-Ie-JuW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uAU-Ku-FrW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FbR-1X-ste" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2493" y="116"/>
+            <point key="canvasLocation" x="2516" y="116"/>
         </scene>
         <!--Autolayout 1-->
         <scene sceneID="tne-QT-ifu">
@@ -121,6 +141,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="116"/>
+        </scene>
+        <!--Autolayout 5-->
+        <scene sceneID="WsP-au-EeF">
+            <objects>
+                <viewController storyboardIdentifier="Autolayout 5" id="mfz-jP-aXi" userLabel="Autolayout 5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1k-BE-KZf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAV-6b-2yB" userLabel="brownView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trf-FD-w89" userLabel="brownView">
+                                <rect key="frame" x="0.0" y="409" width="414" height="487"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QAV-6b-2yB" firstAttribute="leading" secondItem="qra-N4-3Yd" secondAttribute="leading" id="0c1-W7-Apv"/>
+                            <constraint firstItem="QAV-6b-2yB" firstAttribute="top" secondItem="t1k-BE-KZf" secondAttribute="top" id="2wv-Zy-9pF"/>
+                            <constraint firstItem="trf-FD-w89" firstAttribute="leading" secondItem="qra-N4-3Yd" secondAttribute="leading" id="8B8-RT-YAB"/>
+                            <constraint firstItem="trf-FD-w89" firstAttribute="trailing" secondItem="qra-N4-3Yd" secondAttribute="trailing" id="FTw-WD-kuc"/>
+                            <constraint firstItem="QAV-6b-2yB" firstAttribute="height" secondItem="qra-N4-3Yd" secondAttribute="height" multiplier="0.5" id="VQe-vN-xfg"/>
+                            <constraint firstItem="trf-FD-w89" firstAttribute="top" secondItem="QAV-6b-2yB" secondAttribute="bottom" id="ehJ-U9-FEN"/>
+                            <constraint firstAttribute="bottom" secondItem="trf-FD-w89" secondAttribute="bottom" id="iEE-kn-Gmg"/>
+                            <constraint firstItem="QAV-6b-2yB" firstAttribute="trailing" secondItem="qra-N4-3Yd" secondAttribute="trailing" id="kjo-mX-hyL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qra-N4-3Yd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojh-Rl-IT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="821.65178571428567"/>
+        </scene>
+        <!--Autolayout 6-->
+        <scene sceneID="xlc-k3-y2a">
+            <objects>
+                <viewController storyboardIdentifier="Autolayout 6" id="jtt-HE-DrO" userLabel="Autolayout 6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yl7-Y3-Jmf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2MB-rF-vDY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6o-m3-g5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="827"/>
         </scene>
     </scenes>
 </document>
